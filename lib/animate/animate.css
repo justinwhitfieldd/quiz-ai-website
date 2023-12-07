@@ -9,6 +9,7 @@
  */
 
 .animated {
+  z-index: 10;
   animation-duration: 1s;
   animation-fill-mode: both;
 }
@@ -30,6 +31,7 @@
 
 @keyframes bounce {
   from, 20%, 53%, 80%, to {
+    z-index: 10;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     transform: translate3d(0,0,0);
   }
@@ -50,12 +52,14 @@
 }
 
 .bounce {
+  z-index: 10;
   animation-name: bounce;
   transform-origin: center bottom;
 }
 
 @keyframes flash {
   from, 50%, to {
+    z-index: 10;
     opacity: 1;
   }
 
@@ -72,6 +76,7 @@
 
 @keyframes pulse {
   from {
+    z-index: 10;
     transform: scale3d(1, 1, 1);
   }
 
@@ -80,6 +85,7 @@
   }
 
   to {
+    z-index: 10;
     transform: scale3d(1, 1, 1);
   }
 }
@@ -90,6 +96,7 @@
 
 @keyframes rubberBand {
   from {
+    z-index: 10;
     transform: scale3d(1, 1, 1);
   }
 
@@ -98,6 +105,7 @@
   }
 
   40% {
+    z-index: 10;
     transform: scale3d(0.75, 1.25, 1);
   }
 
@@ -114,6 +122,7 @@
   }
 
   to {
+    z-index: 10;
     transform: scale3d(1, 1, 1);
   }
 }
@@ -124,6 +133,7 @@
 
 @keyframes shake {
   from, to {
+    z-index: 10;
     transform: translate3d(0, 0, 0);
   }
 
@@ -177,6 +187,7 @@
   }
 
   40% {
+    z-index: 10;
     transform: rotate3d(0, 0, 1, -10deg);
   }
 
@@ -189,6 +200,7 @@
   }
 
   to {
+    z-index: 10;
     transform: rotate3d(0, 0, 1, 0deg);
   }
 }
@@ -200,6 +212,7 @@
 
 @keyframes tada {
   from {
+    z-index: 10;
     transform: scale3d(1, 1, 1);
   }
 
@@ -216,6 +229,7 @@
   }
 
   to {
+    z-index: 10;
     transform: scale3d(1, 1, 1);
   }
 }
@@ -228,6 +242,7 @@
 
 @keyframes wobble {
   from {
+    z-index: 10;
     transform: none;
   }
 
@@ -252,6 +267,7 @@
   }
 
   to {
+    z-index: 10;
     transform: none;
   }
 }
@@ -262,6 +278,7 @@
 
 @keyframes jello {
   from, 11.1%, to {
+    z-index: 10;
     transform: none;
   }
 
@@ -301,6 +318,7 @@
 
 @keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
+    z-index: 10;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
@@ -314,6 +332,7 @@
   }
 
   40% {
+    z-index: 10;
     transform: scale3d(.9, .9, .9);
   }
 
@@ -327,6 +346,7 @@
   }
 
   to {
+    z-index: 10;
     opacity: 1;
     transform: scale3d(1, 1, 1);
   }
@@ -338,6 +358,7 @@
 
 @keyframes bounceInDown {
   from, 60%, 75%, 90%, to {
+    z-index: 10;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
@@ -360,6 +381,7 @@
   }
 
   to {
+    z-index: 10;
     transform: none;
   }
 }
@@ -370,6 +392,7 @@
 
 @keyframes bounceInLeft {
   from, 60%, 75%, 90%, to {
+    z-index: 10;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
@@ -392,6 +415,7 @@
   }
 
   to {
+    z-index: 10;
     transform: none;
   }
 }
@@ -402,10 +426,12 @@
 
 @keyframes bounceInRight {
   from, 60%, 75%, 90%, to {
+    z-index: 10;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
   from {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(3000px, 0, 0);
   }
@@ -424,6 +450,7 @@
   }
 
   to {
+    z-index: 10;
     transform: none;
   }
 }
@@ -434,10 +461,12 @@
 
 @keyframes bounceInUp {
   from, 60%, 75%, 90%, to {
+    z-index: 10;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
   from {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(0, 3000px, 0);
   }
@@ -456,6 +485,7 @@
   }
 
   to {
+    z-index: 10;
     transform: translate3d(0, 0, 0);
   }
 }
@@ -475,6 +505,7 @@
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: scale3d(.3, .3, .3);
   }
@@ -495,6 +526,7 @@
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(0, 2000px, 0);
   }
@@ -511,6 +543,7 @@
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(-2000px, 0, 0);
   }
@@ -527,6 +560,7 @@
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(2000px, 0, 0);
   }
@@ -547,6 +581,7 @@
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(0, -2000px, 0);
   }
@@ -558,10 +593,12 @@
 
 @keyframes fadeIn {
   from {
+    z-index: 10;
     opacity: 0;
   }
 
   to {
+    z-index: 10;
     opacity: 1;
   }
 }
@@ -572,11 +609,13 @@
 
 @keyframes fadeInDown {
   from {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(0, -100%, 0);
   }
 
   to {
+    z-index: 10;
     opacity: 1;
     transform: none;
   }
@@ -588,11 +627,13 @@
 
 @keyframes fadeInDownBig {
   from {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(0, -2000px, 0);
   }
 
   to {
+    z-index: 10;
     opacity: 1;
     transform: none;
   }
@@ -604,11 +645,13 @@
 
 @keyframes fadeInLeft {
   from {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(-100%, 0, 0);
   }
 
   to {
+    z-index: 10;
     opacity: 1;
     transform: none;
   }
@@ -620,11 +663,13 @@
 
 @keyframes fadeInLeftBig {
   from {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(-2000px, 0, 0);
   }
 
   to {
+    z-index: 10;
     opacity: 1;
     transform: none;
   }
@@ -636,11 +681,13 @@
 
 @keyframes fadeInRight {
   from {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(100%, 0, 0);
   }
 
   to {
+    z-index: 10;
     opacity: 1;
     transform: none;
   }
@@ -652,11 +699,13 @@
 
 @keyframes fadeInRightBig {
   from {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(2000px, 0, 0);
   }
 
   to {
+    z-index: 10;
     opacity: 1;
     transform: none;
   }
@@ -668,11 +717,13 @@
 
 @keyframes fadeInUp {
   from {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
 
   to {
+    z-index: 10;
     opacity: 1;
     transform: none;
   }
@@ -684,11 +735,13 @@
 
 @keyframes fadeInUpBig {
   from {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(0, 2000px, 0);
   }
 
   to {
+    z-index: 10;
     opacity: 1;
     transform: none;
   }
@@ -700,10 +753,12 @@
 
 @keyframes fadeOut {
   from {
+    z-index: 10;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     opacity: 0;
   }
 }
@@ -714,10 +769,12 @@
 
 @keyframes fadeOutDown {
   from {
+    z-index: 10;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
@@ -729,10 +786,12 @@
 
 @keyframes fadeOutDownBig {
   from {
+    z-index: 10;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(0, 2000px, 0);
   }
@@ -744,10 +803,12 @@
 
 @keyframes fadeOutLeft {
   from {
+    z-index: 10;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(-100%, 0, 0);
   }
@@ -759,10 +820,12 @@
 
 @keyframes fadeOutLeftBig {
   from {
+    z-index: 10;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(-2000px, 0, 0);
   }
@@ -774,10 +837,12 @@
 
 @keyframes fadeOutRight {
   from {
+    z-index: 10;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(100%, 0, 0);
   }
@@ -789,10 +854,12 @@
 
 @keyframes fadeOutRightBig {
   from {
+    z-index: 10;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(2000px, 0, 0);
   }
@@ -804,10 +871,12 @@
 
 @keyframes fadeOutUp {
   from {
+    z-index: 10;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(0, -100%, 0);
   }
@@ -819,10 +888,12 @@
 
 @keyframes fadeOutUpBig {
   from {
+    z-index: 10;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(0, -2000px, 0);
   }
@@ -834,11 +905,13 @@
 
 @keyframes flip {
   from {
+    z-index: 10;
     transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
     animation-timing-function: ease-out;
   }
 
   40% {
+    z-index: 10;
     transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
     animation-timing-function: ease-out;
   }
@@ -854,6 +927,7 @@
   }
 
   to {
+    z-index: 10;
     transform: perspective(400px);
     animation-timing-function: ease-in;
   }
@@ -867,12 +941,14 @@
 
 @keyframes flipInX {
   from {
+    z-index: 10;
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     animation-timing-function: ease-in;
     opacity: 0;
   }
 
   40% {
+    z-index: 10;
     transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     animation-timing-function: ease-in;
   }
@@ -887,6 +963,7 @@
   }
 
   to {
+    z-index: 10;
     transform: perspective(400px);
   }
 }
@@ -899,12 +976,14 @@
 
 @keyframes flipInY {
   from {
+    z-index: 10;
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     animation-timing-function: ease-in;
     opacity: 0;
   }
 
   40% {
+    z-index: 10;
     transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
     animation-timing-function: ease-in;
   }
@@ -919,6 +998,7 @@
   }
 
   to {
+    z-index: 10;
     transform: perspective(400px);
   }
 }
@@ -931,6 +1011,7 @@
 
 @keyframes flipOutX {
   from {
+    z-index: 10;
     transform: perspective(400px);
   }
 
@@ -940,6 +1021,7 @@
   }
 
   to {
+    z-index: 10;
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     opacity: 0;
   }
@@ -953,6 +1035,7 @@
 
 @keyframes flipOutY {
   from {
+    z-index: 10;
     transform: perspective(400px);
   }
 
@@ -962,6 +1045,7 @@
   }
 
   to {
+    z-index: 10;
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     opacity: 0;
   }
@@ -975,6 +1059,7 @@
 
 @keyframes lightSpeedIn {
   from {
+    z-index: 10;
     transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;
   }
@@ -990,6 +1075,7 @@
   }
 
   to {
+    z-index: 10;
     transform: none;
     opacity: 1;
   }
@@ -1002,10 +1088,12 @@
 
 @keyframes lightSpeedOut {
   from {
+    z-index: 10;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     transform: translate3d(100%, 0, 0) skewX(30deg);
     opacity: 0;
   }
@@ -1018,12 +1106,14 @@
 
 @keyframes rotateIn {
   from {
+    z-index: 10;
     transform-origin: center;
     transform: rotate3d(0, 0, 1, -200deg);
     opacity: 0;
   }
 
   to {
+    z-index: 10;
     transform-origin: center;
     transform: none;
     opacity: 1;
@@ -1036,12 +1126,14 @@
 
 @keyframes rotateInDownLeft {
   from {
+    z-index: 10;
     transform-origin: left bottom;
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
   }
 
   to {
+    z-index: 10;
     transform-origin: left bottom;
     transform: none;
     opacity: 1;
@@ -1054,12 +1146,14 @@
 
 @keyframes rotateInDownRight {
   from {
+    z-index: 10;
     transform-origin: right bottom;
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
 
   to {
+    z-index: 10;
     transform-origin: right bottom;
     transform: none;
     opacity: 1;
@@ -1072,12 +1166,14 @@
 
 @keyframes rotateInUpLeft {
   from {
+    z-index: 10;
     transform-origin: left bottom;
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
 
   to {
+    z-index: 10;
     transform-origin: left bottom;
     transform: none;
     opacity: 1;
@@ -1090,12 +1186,14 @@
 
 @keyframes rotateInUpRight {
   from {
+    z-index: 10;
     transform-origin: right bottom;
     transform: rotate3d(0, 0, 1, -90deg);
     opacity: 0;
   }
 
   to {
+    z-index: 10;
     transform-origin: right bottom;
     transform: none;
     opacity: 1;
@@ -1108,11 +1206,13 @@
 
 @keyframes rotateOut {
   from {
+    z-index: 10;
     transform-origin: center;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     transform-origin: center;
     transform: rotate3d(0, 0, 1, 200deg);
     opacity: 0;
@@ -1125,11 +1225,13 @@
 
 @keyframes rotateOutDownLeft {
   from {
+    z-index: 10;
     transform-origin: left bottom;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     transform-origin: left bottom;
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
@@ -1142,11 +1244,13 @@
 
 @keyframes rotateOutDownRight {
   from {
+    z-index: 10;
     transform-origin: right bottom;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     transform-origin: right bottom;
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
@@ -1159,11 +1263,13 @@
 
 @keyframes rotateOutUpLeft {
   from {
+    z-index: 10;
     transform-origin: left bottom;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     transform-origin: left bottom;
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
@@ -1176,11 +1282,13 @@
 
 @keyframes rotateOutUpRight {
   from {
+    z-index: 10;
     transform-origin: right bottom;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     transform-origin: right bottom;
     transform: rotate3d(0, 0, 1, 90deg);
     opacity: 0;
@@ -1211,6 +1319,7 @@
   }
 
   to {
+    z-index: 10;
     transform: translate3d(0, 700px, 0);
     opacity: 0;
   }
@@ -1222,6 +1331,7 @@
 
 @keyframes jackInTheBox {
   from {
+    z-index: 10;
     opacity: 0;
     transform: scale(0.1) rotate(30deg);
     transform-origin: center bottom;
@@ -1236,6 +1346,7 @@
   }
 
   to {
+    z-index: 10;
     opacity: 1;
     transform: scale(1);
   }
@@ -1249,11 +1360,13 @@
 
 @keyframes rollIn {
   from {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
   }
 
   to {
+    z-index: 10;
     opacity: 1;
     transform: none;
   }
@@ -1267,10 +1380,12 @@
 
 @keyframes rollOut {
   from {
+    z-index: 10;
     opacity: 1;
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
   }
@@ -1282,6 +1397,7 @@
 
 @keyframes zoomIn {
   from {
+    z-index: 10;
     opacity: 0;
     transform: scale3d(.3, .3, .3);
   }
@@ -1297,6 +1413,7 @@
 
 @keyframes zoomInDown {
   from {
+    z-index: 10;
     opacity: 0;
     transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
@@ -1315,6 +1432,7 @@
 
 @keyframes zoomInLeft {
   from {
+    z-index: 10;
     opacity: 0;
     transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
@@ -1333,6 +1451,7 @@
 
 @keyframes zoomInRight {
   from {
+    z-index: 10;
     opacity: 0;
     transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
@@ -1351,6 +1470,7 @@
 
 @keyframes zoomInUp {
   from {
+    z-index: 10;
     opacity: 0;
     transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
@@ -1369,6 +1489,7 @@
 
 @keyframes zoomOut {
   from {
+    z-index: 10;
     opacity: 1;
   }
 
@@ -1378,6 +1499,7 @@
   }
 
   to {
+    z-index: 10;
     opacity: 0;
   }
 }
@@ -1388,12 +1510,14 @@
 
 @keyframes zoomOutDown {
   40% {
+    z-index: 10;
     opacity: 1;
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
     transform-origin: center bottom;
@@ -1407,11 +1531,13 @@
 
 @keyframes zoomOutLeft {
   40% {
+    z-index: 10;
     opacity: 1;
     transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: scale(.1) translate3d(-2000px, 0, 0);
     transform-origin: left center;
@@ -1424,11 +1550,13 @@
 
 @keyframes zoomOutRight {
   40% {
+    z-index: 10;
     opacity: 1;
     transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: scale(.1) translate3d(2000px, 0, 0);
     transform-origin: right center;
@@ -1441,12 +1569,14 @@
 
 @keyframes zoomOutUp {
   40% {
+    z-index: 10;
     opacity: 1;
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
   }
 
   to {
+    z-index: 10;
     opacity: 0;
     transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
     transform-origin: center bottom;
@@ -1460,11 +1590,13 @@
 
 @keyframes slideInDown {
   from {
+    z-index: 10;
     transform: translate3d(0, -100%, 0);
     visibility: visible;
   }
 
   to {
+    z-index: 10;
     transform: translate3d(0, 0, 0);
   }
 }
@@ -1475,11 +1607,13 @@
 
 @keyframes slideInLeft {
   from {
+    z-index: 10;
     transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
 
   to {
+    z-index: 10;
     transform: translate3d(0, 0, 0);
   }
 }
@@ -1490,11 +1624,13 @@
 
 @keyframes slideInRight {
   from {
+    z-index: 10;
     transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
 
   to {
+    z-index: 10;
     transform: translate3d(0, 0, 0);
   }
 }
@@ -1505,25 +1641,32 @@
 
 @keyframes slideInUp {
   from {
+    z-index: 10;
     transform: translate3d(0, 100%, 0);
     visibility: visible;
+    z-index: 10;
   }
 
   to {
+    z-index: 10;
     transform: translate3d(0, 0, 0);
+    z-index: 10;
   }
 }
 
 .slideInUp {
+  z-index: 10;
   animation-name: slideInUp;
 }
 
 @keyframes slideOutDown {
   from {
+    z-index: 10;
     transform: translate3d(0, 0, 0);
   }
 
   to {
+    z-index: 10;
     visibility: hidden;
     transform: translate3d(0, 100%, 0);
   }
@@ -1535,10 +1678,12 @@
 
 @keyframes slideOutLeft {
   from {
+    z-index: 10;
     transform: translate3d(0, 0, 0);
   }
 
   to {
+    z-index: 10;
     visibility: hidden;
     transform: translate3d(-100%, 0, 0);
   }
@@ -1550,10 +1695,12 @@
 
 @keyframes slideOutRight {
   from {
+    z-index: 10;
     transform: translate3d(0, 0, 0);
   }
 
   to {
+    z-index: 10;
     visibility: hidden;
     transform: translate3d(100%, 0, 0);
   }
@@ -1565,10 +1712,12 @@
 
 @keyframes slideOutUp {
   from {
+    z-index: 10;
     transform: translate3d(0, 0, 0);
   }
 
   to {
+    z-index: 10;
     visibility: hidden;
     transform: translate3d(0, -100%, 0);
   }
