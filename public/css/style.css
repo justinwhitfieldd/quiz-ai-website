@@ -60,7 +60,6 @@ h6,
 .bg-primary-gradient {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
 }
-
 .bg-secondary-gradient {
     background: linear-gradient(to bottom right, var(--secondary), var(--primary));
 }
@@ -97,7 +96,16 @@ h6,
 .btn.btn-secondary-gradient::after {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
 }
-
+.btn.btn-otherprimary-gradient{
+    background: linear-gradient(to bottom right, var(--otherPrimary), var(--otherSecondary));
+}
+.btn.btn-otherprimary-gradient{
+    position: relative;
+    overflow: hidden;
+    border: none;
+    color: #FFFFFF;
+    z-index: 1;
+}
 .btn.btn-secondary-gradient,
 .btn.btn-primary-gradient::after {
     background: linear-gradient(to bottom right, var(--secondary), var(--primary));
