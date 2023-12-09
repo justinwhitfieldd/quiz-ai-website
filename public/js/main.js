@@ -1,3 +1,23 @@
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDJB_VpURfiO2nPSSCqklpHqwh8Mu8myZI",
+  authDomain: "quiz-ai-website.firebaseapp.com",
+  projectId: "quiz-ai-website",
+  storageBucket: "quiz-ai-website.appspot.com",
+  messagingSenderId: "917006625639",
+  appId: "1:917006625639:web:9c10af75f1598c93079dc2",
+  measurementId: "G-LCJER8BX06"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 (function ($) {
     "use strict";
 
